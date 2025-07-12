@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Raheem | Portfolio</title>
+  <meta name="description" content="Abdul Raheem's Personal Portfolio - BS Software Engineering student passionate about web and app development.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="output.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="Assets/Personal Portfolio .png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Satoshi', sans-serif;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+  </style>
+</head>
+
+<body class="bg-[#0E0E0E] text-[#EAEAEA] font-[Inter]">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 border-b border-[#565656]">
+    <h1 class="text-xl font-semibold text-[#FF6B00]">Abdul Raheem</h1>
+    <ul class="flex gap-6">
+      <li><a href="#home" class="hover:text-[#FF6B00]">Home</a></li>
+      <li><a href="#about" class="hover:text-[#FF6B00]">About</a></li>
+      <li><a href="#skills" class="hover:text-[#FF6B00]">Skills</a></li>
+      <li><a href="#projects" class="hover:text-[#FF6B00]">Projects</a></li>
+      <li><a href="#contact" class="hover:text-[#FF6B00]">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1st Section -->
+  <section id="home" class="flex flex-col justify-center items-center h-screen text-center px-4">
+     <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left opacity-0 animate-fade-in">
+        <img src="Assets/Raheem-portfolio.jpg" alt="Abdul Raheem" class="w-32 h-32 rounded-full object-cover border-4 border-[#FF6B00] transform hover:scale-105 transition duration-300">
+        <!-- Text -->
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Abdul Raheem</h1>
+          <p class="text-lg mb-6">BS Software Engineering student passionate about web and app development.</p>
+          <a href="#contact" class="inline-block bg-[#FF6B00] text-[#0E0E0E] px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Contact Me</a>
+        </div>
+    </div>
+      <!-- 
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Abdul Raheem</h2>
+      <p class="text-[#EAEAEA] max-w-xl mb-6">BS Software Engineering student passionate about web and app development.</p>
+      <a href="#projects" class="bg-[#FF6B00] text-[#0E0E0E] px-6 py-3 rounded hover:bg-[#e65c00]">View My Work</a> -->
+    </section>
+
+  <!-- About Section -->
+    <section id="about" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-6">About Me</h2>
+        <p class="text-lg leading-relaxed">
+          Hello! I’m Abdul Raheem, a BS Software Engineering student with a passion for web and app development. I enjoy turning ideas into real digital solutions that are user-friendly and impactful. Currently, I’m focusing on building my skills in front-end and back-end development, while exploring modern frameworks to create advanced and responsive websites and applications. I believe in continuous learning and love working on practical projects to enhance my experience. My goal is to become a full-stack developer and help businesses grow through technology.
+        </p>
+      </div>
+    </section>
+        <!-- Skills Section -->
+    <section id="skills" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] text-center mb-10">Skills</h2>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+
+          <!-- Programming Languages -->
+          <div>
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Programming</h3>
+            <ul class="space-y-1">
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>HTML & CSS</li>
+            </ul>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div>
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Frameworks</h3>
+            <ul class="space-y-1">
+              <li>Django</li>
+              <li>JavaFX</li>
+            </ul>
+          </div>
+
+          <!-- Databases -->
+          <div>
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Database</h3>
+            <ul class="space-y-1">
+              <li>SQLite</li>
+              <li>MySQL (basic)</li>
+            </ul>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div>
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Tools</h3>
+            <ul class="space-y-1">
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Eclipse</li>
+              <li>IntelliJ IDEA</li>
+              <li>DB Browser for SQLite</li>
+            </ul>
+          </div>
+
+          <!-- Other Skills -->
+          <div>
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Other</h3>
+            <ul class="space-y-1">
+              <li>Responsive Web Design</li>
+              <li>Problem Solving</li>
+              <li>OOP</li>
+              <li>UI/UX Basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] text-center mb-10">Projects</h2>
+    
+        <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-[#1A1A1A] rounded-lg p-6 shadow hover:scale-105 transition-transform duration-300">
+          <!-- Project 1: Mobile Bio Lab -->
+          <div class="bg-[#1A1A1A] rounded-lg shadow-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3 text-[#FF6B00]">Mobile Bio Lab Web Application</h3>
+              <p class="mb-4">
+                Developed a web application for managing lab operations, including patient management, lab tests, technician and receptionist functionalities, and doctor feedback.
+              </p>
+              <ul class="text-sm mb-4">
+                <li>✔️ User authentication & role-based dashboards</li>
+                <li>✔️ Patient and lab test management</li>
+                <li>✔️ Doctor feedback system</li>
+                <li>✔️ Clean UI with responsive design</li>
+              </ul>
+              <p class="text-sm"><span class="font-semibold">Technologies:</span> Python, Django, HTML, CSS, JavaScript, SQLite</p>
+            </div>
+          </div>
+          </div>
+          <div class="bg-[#1A1A1A] rounded-lg p-6 shadow hover:scale-105 transition-transform duration-300">
+          <!-- Project 2: Task Management System -->
+          <div class="bg-[#1A1A1A] rounded-lg shadow-lg overflow-hidden">
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3 text-[#FF6B00]">Task Management System</h3>
+              <p class="mb-4">
+                Created a task management system as a university project to manage daily tasks efficiently. Users can add, update, and delete tasks with a simple and intuitive interface.
+              </p>
+              <ul class="text-sm mb-4">
+                <li>✔️ CRUD operations for tasks</li>
+                <li>✔️ User-friendly dashboard</li>
+                <li>✔️ Local storage data management</li>
+              </ul>
+              <p class="text-sm"><span class="font-semibold">Technologies:</span> Java, JavaFX, SQLite</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-10">Contact Me</h2>
+
+        <div class="space-y-6 text-lg">
+
+          <!-- WhatsApp -->
+          <p>
+            📱 <span class="font-semibold">WhatsApp:</span> 
+            <a href="https://wa.me/923058437103" target="_blank" class="text-[#FF6B00] hover:underline">
+              0305-8437103
+            </a>
+          </p>
+
+          <!-- LinkedIn -->
+          <p>
+            💼 <span class="font-semibold">LinkedIn:</span> 
+            <a href="https://www.linkedin.com/in/abdul-raheem-499b50266" target="_blank" class="text-[#FF6B00] hover:underline">
+              View Profile
+            </a>
+          </p>
+
+          <!-- Email -->
+          <p>
+            ✉️ <span class="font-semibold">Email:</span> 
+            <a href="mailto:raheem0281@gmail.com" class="text-[#FF6B00] hover:underline">
+              raheem0281@gmail.com
+            </a>
+          </p>
+
+          <!-- Location -->
+          <p>
+            📍 <span class="font-semibold">Location:</span> Chowk Azam, Pakistan
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+<footer class="bg-[#0E0E0E] text-[#EAEAEA] text-center px-4 py-6 border-t border-[#565656]">
+  <p class="text-sm">
+    &copy; 2025 Abdul Raheem. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>
