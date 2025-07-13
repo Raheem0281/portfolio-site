@@ -66,17 +66,31 @@
 <body class="bg-[#0E0E0E] text-[#EAEAEA] font-[Inter]">
 
   <!-- Navbar -->
-  <nav class="flex justify-between items-center px-8 py-4 border-b border-[#565656]">
-    <h1 class="text-xl font-semibold text-[#FF6B00]">Abdul Raheem</h1>
-    <ul class="flex gap-6">
-      <li><a href="#home" class="hover:text-[#FF6B00]">Home</a></li>
-      <li><a href="#about" class="hover:text-[#FF6B00]">About</a></li>
-      <li><a href="#skills" class="hover:text-[#FF6B00]">Skills</a></li>
-      <li><a href="#projects" class="hover:text-[#FF6B00]">Projects</a></li>
-      <li><a href="#contact" class="hover:text-[#FF6B00]">Contact</a></li>
-    </ul>
-  </nav>
-
+    <nav class="flex items-center justify-between flex-wrap px-8 py-4 border-b border-[#565656]">
+      <div class="flex items-center flex-shrink-0 text-[#FF6B00] mr-6">
+        <h1 class="text-xl font-semibold">Abdul Raheem</h1>
+      </div>
+    
+      <!-- Hamburger Icon -->
+      <div class="block md:hidden">
+        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-[#FF6B00] border-[#FF6B00] hover:text-orange-500 hover:border-orange-500">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20">
+            <path d="M0 3h20v2H0zM0 9h20v2H0zM0 15h20v2H0z"/>
+          </svg>
+        </button>
+      </div>
+    
+      <!-- Menu Links -->
+      <div id="nav-menu" class="w-full block flex-grow md:flex md:items-center md:w-auto hidden md:block">
+        <ul class="text-sm md:flex-grow md:flex md:justify-end md:items-center gap-6">
+          <li><a href="#home" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">Home</a></li>
+          <li><a href="#about" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">About</a></li>
+          <li><a href="#skills" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">Skills</a></li>
+          <li><a href="#projects" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">Projects</a></li>
+          <li><a href="#contact" class="block mt-4 md:inline-block md:mt-0 hover:text-[#FF6B00]">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
   <!-- 1st Section -->
   <section id="home" class="flex flex-col justify-center items-center h-screen text-center px-4">
      <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left opacity-0 animate-fade-in">
@@ -157,7 +171,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Projects Section -->
     <section id="projects" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
       <div class="max-w-5xl mx-auto">
@@ -271,11 +285,19 @@
       </div>
     </section>
     <!-- Footer -->
-<footer class="bg-[#0E0E0E] text-[#EAEAEA] text-center px-4 py-6 border-t border-[#565656]">
-  <p class="text-sm">
-    &copy; 2025 Abdul Raheem. All rights reserved.
-  </p>
-</footer>
-
+    <footer class="bg-[#0E0E0E] text-[#EAEAEA] text-center px-4 py-6 border-t border-[#565656]">
+      <p class="text-sm">
+        &copy; 2025 Abdul Raheem. All rights reserved.
+      </p>
+    </footer>
+    
+    <script>
+      const navToggle = document.getElementById('nav-toggle');
+      const navMenu = document.getElementById('nav-menu');
+    
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+      });
+    </script>
 </body>
 </html>
