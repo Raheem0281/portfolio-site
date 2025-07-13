@@ -6,20 +6,23 @@
   <title>Abdul Raheem | Portfolio</title>
   <meta name="description" content="Abdul Raheem's Personal Portfolio - BS Software Engineering student passionate about web and app development.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="output.css" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="Assets/Personal Portfolio .png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link href="output.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="Assets/Personal-Portfolio.png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <style>
     html {
       scroll-behavior: smooth;
     }
-
     body {
       font-family: 'Inter', sans-serif;
     }
-
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Satoshi', sans-serif;
     }
@@ -27,10 +30,35 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     .animate-fade-in {
       animation: fadeIn 1s ease-out forwards;
     }
+    @keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
 
   </style>
 </head>
@@ -60,14 +88,11 @@
           <a href="#contact" class="inline-block bg-[#FF6B00] text-[#0E0E0E] px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Contact Me</a>
         </div>
     </div>
-      <!-- 
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Abdul Raheem</h2>
-      <p class="text-[#EAEAEA] max-w-xl mb-6">BS Software Engineering student passionate about web and app development.</p>
-      <a href="#projects" class="bg-[#FF6B00] text-[#0E0E0E] px-6 py-3 rounded hover:bg-[#e65c00]">View My Work</a> -->
+      
     </section>
 
   <!-- About Section -->
-    <section id="about" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20">
+    <section id="about" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 animate-fade-in-up">
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-6">About Me</h2>
         <p class="text-lg leading-relaxed">
@@ -76,14 +101,14 @@
       </div>
     </section>
         <!-- Skills Section -->
+    <!-- Skills Section -->
     <section id="skills" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] text-center mb-10">Skills</h2>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-
-          <!-- Programming Languages -->
-          <div>
+      <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-10">Skills</h2>
+      
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <!-- Skill Card Example -->
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
             <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Programming</h3>
             <ul class="space-y-1">
               <li>Python</li>
@@ -92,28 +117,25 @@
               <li>HTML & CSS</li>
             </ul>
           </div>
-
-          <!-- Frameworks & Libraries -->
-          <div>
+        
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
             <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Frameworks</h3>
             <ul class="space-y-1">
               <li>Django</li>
               <li>JavaFX</li>
             </ul>
           </div>
-
-          <!-- Databases -->
-          <div>
-            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Database</h3>
+        
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Databases</h3>
             <ul class="space-y-1">
               <li>SQLite</li>
               <li>MySQL (basic)</li>
             </ul>
           </div>
-
-          <!-- Tools & Technologies -->
-          <div>
-            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Tools</h3>
+        
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
+            <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Tools & Technologies</h3>
             <ul class="space-y-1">
               <li>Git & GitHub</li>
               <li>VS Code</li>
@@ -122,9 +144,8 @@
               <li>DB Browser for SQLite</li>
             </ul>
           </div>
-
-          <!-- Other Skills -->
-          <div>
+        
+          <div class="bg-[#1A1A1A] rounded-lg p-4 hover:scale-105 transition-transform duration-300">
             <h3 class="text-xl font-semibold text-[#FF6B00] mb-2">Other</h3>
             <ul class="space-y-1">
               <li>Responsive Web Design</li>
@@ -136,6 +157,7 @@
         </div>
       </div>
     </section>
+    
     <!-- Projects Section -->
     <section id="projects" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
       <div class="max-w-5xl mx-auto">
@@ -180,8 +202,37 @@
         </div>
       </div>
     </section>
+    <!-- Contact Form Section -->
+  <section id="contact-form" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656] animate-fade-in-up">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-10 text-center">Contact Form</h2>
+      <form action="https://formspree.io/f/xkgzwrdb" method="POST" class="space-y-6">
+        <div>
+          <label for="name" class="block mb-2 font-semibold">Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded bg-[#1A1A1A] border border-[#565656] focus:outline-none focus:border-[#FF6B00]">
+        </div>
+        <div>
+          <label for="phone" class="block mb-2 font-semibold">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 rounded bg-[#1A1A1A] border border-[#565656] focus:outline-none focus:border-[#FF6B00]">
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded bg-[#1A1A1A] border border-[#565656] focus:outline-none focus:border-[#FF6B00]">
+        </div>
+        <div>
+          <label for="description" class="block mb-2 font-semibold">Description</label>
+          <textarea id="description" name="description" rows="4" required class="w-full px-4 py-2 rounded bg-[#1A1A1A] border border-[#565656] focus:outline-none focus:border-[#FF6B00]"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-[#FF6B00] text-[#0E0E0E] px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition">Submit</button>
+        </div>
+        <input type="hidden" name="_redirect" value="https://yourwebsite.com/thankyou.html">
+      </form>
+    </div>
+  </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656]">
+    <section id="contact" class="bg-[#0E0E0E] text-[#EAEAEA] px-4 py-16 md:px-20 border-t border-[#565656] animate-fade-in-up">
       <div class="max-w-3xl mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-[#FF6B00] mb-10">Contact Me</h2>
 
